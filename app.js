@@ -26,7 +26,8 @@ function takePhoto(boardId) {
     });
     s3.upload().send(function(err, data) {
       socket.emit('take-photo-complete', {
-        url: data.Location
+        url: data.Location,
+        boardId: boardId
       });
     });
   });
