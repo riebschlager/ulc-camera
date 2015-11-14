@@ -24,6 +24,7 @@ function takePhoto(boardId) {
       }
     });
     s3.upload().send(function(err, data) {
+      console.log(err);
       socket.emit('preview-complete', {
         url: data.Location
       });
