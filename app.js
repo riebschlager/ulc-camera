@@ -19,7 +19,7 @@ function takePhoto(boardId) {
     var s3 = new AWS.S3({
       params: {
         Bucket: 'ulc.the816.co',
-        Key: boardId + '.jpg',
+        Key: boardId + '-' + Date.now() + '.jpg',
         ContentType: 'image/jpeg',
         Body: body
       }
