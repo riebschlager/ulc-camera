@@ -25,15 +25,12 @@ function takePhoto(boardId) {
       }
     });
     s3.upload().send(function(err, data) {
-      console.log(err);
-      socket.emit('preview-complete', {
+      socket.emit('take-photo-complete', {
         url: data.Location
       });
     });
   });
 }
-
-takePhoto('aasdfasdfasdf');
 
 var heartbeat = setInterval(function() {
   socket.emit('heartbeat', {
