@@ -6,6 +6,7 @@ var AWS = require('aws-sdk');
 var CP = require('child_process');
 var FS = require('fs');
 var IO = require('socket.io-client');
+AWS.config.region = 'us-west-2';
 
 var socket = IO.connect('ulc-relay.herokuapp.com', {
   port: 80
@@ -18,7 +19,6 @@ function takePhoto(boardId) {
     var s3 = new AWS.S3({
       params: {
         Bucket: 'ulc.the816.co',
-        Region: 's3-us-west-2.amazonaws.com',
         Key: boardId + '.jpg',
         ContentType: 'image/jpeg',
         Body: body
