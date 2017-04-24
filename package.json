@@ -1,24 +1,23 @@
 {
-  "name": "ulc-camera",
-  "version": "1.0.0",
-  "description": "Add a config.js file that looks a lil' something like this.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/riebschlager/ulc-camera.git"
-  },
-  "author": "Chris Riebschlager",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/riebschlager/ulc-camera/issues"
-  },
-  "homepage": "https://github.com/riebschlager/ulc-camera#readme",
-  "dependencies": {
-    "aws-sdk": "^2.2.17",
-    "socket.io": "^1.3.7",
-    "socket.io-client": "^1.3.7"
-  }
+    "name": "ulc-camera",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/riebschlager/ulc-camera.git"
+    },
+    "author": "Chris Riebschlager",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/riebschlager/ulc-camera/issues"
+    },
+    "homepage": "https://github.com/riebschlager/ulc-camera#readme",
+    "dependencies": {
+        "aws-sdk": "^2.45.0",
+        "socket.io-client": "^1.7.3"
+    }
 }
