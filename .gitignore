@@ -3,3 +3,5 @@ config.js
 *.gif
 *.dmg
 *.jpg
+config/*
+!config/default.json
